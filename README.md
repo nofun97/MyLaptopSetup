@@ -5,7 +5,7 @@ Just personal laptop setup, only works for mac
 Feel free to fork, modify, and use it.
 
 To use:
-1. run `setup.sh`, which will install brew, xcode cli, zsh, and oh-my-zsh. It also setups golang directories, modify that to your needs.
+1. run `setup.sh`, which will install brew, xcode cli, zsh, and oh-my-zsh. It also setups golang directories and git configs, modify them to your needs.
 2. run `install.sh`, which will install the rest of the applications. Modify the last two lines of it because it downloads my `.zshrc` and `.vimrc`.
 
 It's very small, it installs
