@@ -30,4 +30,3 @@ It's very small, it installs
 * Golang
 * Node Version Manager or [NVM](https://github.com/nvm-sh/nvm)
 * Yarn
-* 
