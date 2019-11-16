@@ -14,6 +14,10 @@ brew install caskroom/cask/brew-cask
 # wget
 brew install wget
 
+# docker
+brew install docker docker-machine
+brew cask install virtualbox
+
 # install java 8
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
