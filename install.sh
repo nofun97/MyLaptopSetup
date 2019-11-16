@@ -61,6 +61,10 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install slack
 
+# security stuff
+brew install burp-suite
+brew install wireshark
+
 # get .zshrc
 wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.zshrc
 wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.vimrc
