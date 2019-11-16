@@ -1,4 +1,7 @@
+#!/usr/bin/env bash
 # adapted from https://github.com/donnemartin/dev-setup/blob/master/brew.sh
+
+cd $HOME
 
 # Ask for the administrator password upfront
 sudo -v
@@ -21,3 +24,6 @@ brew upgrade --all
 # zsh
 brew install zsh zsh-completions
 chsh -s /bin/zsh
+
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
