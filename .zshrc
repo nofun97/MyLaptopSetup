@@ -1,4 +1,10 @@
 echo "Everyday is a new day for more bad choices"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -11,15 +17,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
-# theme config
-POWERLEVEL9K_MODE="awesome-patched"
-POWERLEVEL9K_GO_ICON="\uf7b7"
-POWERLEVEL9K_GO_VERSION_BACKGROUND='clear'
-POWERLEVEL9K_GO_VERSION_FOREGROUND='081'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context root_indicator dir dir_writable_joined custom_git_pair vcs_joined)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(go_version virtualenv pyenv node_version nvm status root_indicator background_jobs history time os_icon)
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
