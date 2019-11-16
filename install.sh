@@ -66,5 +66,5 @@ brew install burp-suite
 brew install wireshark
 
 # get .zshrc
-wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.zshrc
-wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.vimrc
+wget https://raw.githubusercontent.com/nofun97/MyLaptopSetup/master/.zshrc
+wget https://raw.githubusercontent.com/nofun97/MyLaptopSetup/master/.vimrc
