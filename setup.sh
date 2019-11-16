@@ -12,6 +12,15 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # install xcode CLI
 xcode-select --install
 
+# make GO directories
+mkdir $HOME/.go
+mkdir $HOME/.go/bin
+mkdir $HOME/.go/src
+mkdir $HOME/.go/pkg
+mkdir -p $HOME/projects/go/bin
+mkdir -p $HOME/projects/go/src
+mkdir -p $HOME/projects/go/pkg
+
 # install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
