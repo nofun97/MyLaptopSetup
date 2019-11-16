@@ -8,6 +8,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `osx.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# brew-cask
+brew install caskroom/cask/brew-cask
+
 # wget
 brew install wget
 
@@ -47,5 +50,13 @@ NVM_DIR=$HOME/.nvm
 nvm install node
 brew install yarn
 
+# install iTerm2, Spotify, Chrome, Firefox, Slack
+brew cask install iterm2
+brew cask install spotify
+brew cask install firefox
+brew cask install google-chrome
+brew cask install slack
+
 # get .zshrc
 wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.zshrc
+wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.vimrc
