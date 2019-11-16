@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH="${HOME}/.go:${HOME}/projects/go"
 export GOBIN="$(echo -n $GOPATH | cut -f1 -d ':')/bin"
 export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOBIN}"
+export PATH="$PATH:${GOBIN}:${GOROOT}/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
