@@ -110,8 +110,9 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Setting workspace PATH for GO
-export GOPATH="$HOME/go:$HOME/go_projects"
-export GOBIN="$GOPATH/bin"
+export GOPATH="${HOME}/.go:${HOME}/projects/go"
+export GOBIN="$(echo -n $GOPATH | cut -f1 -d ':')/bin"
+export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOBIN}"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -119,3 +120,4 @@ export PATH="$PATH:${GOBIN}"
 
 # aliases
 alias reload="source $HOME/.zshrc"
+alias code="codium"
