@@ -26,8 +26,10 @@ brew cask install vscodium
 brew install python3
 pip3 install --user virtualenv
 
-# golang
+# golang and golang lint
 brew install go
+brew install golangci/tap/golangci-lint
+brew upgrade golangci/tap/golangci-lint
 
 # zsh plugins and theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
