@@ -30,6 +30,13 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
+# git setup
+git config --global user.name "nofun97"
+git config --global user.email "novan.allanadi1211@gmail.com"
+git config --global color.ui true
+git config --global core.editor vim
+git config --global credential.helper store
+
 # zsh
 brew install zsh zsh-completions
 chsh -s /bin/zsh
