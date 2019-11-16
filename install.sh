@@ -44,3 +44,6 @@ exec -l $SHELL
 NVM_DIR=$HOME/.nvm
 nvm install node
 brew install yarn
+
+# get .zshrc
+wget https://raw.githubusercontent.com/nofun97/my-laptop-setup/master/.zshrc
