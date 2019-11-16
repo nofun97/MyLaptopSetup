@@ -14,8 +14,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # theme config
 POWERLEVEL9K_MODE="awesome-patched"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(go_version virtualenv pyenv node_version nvm status root_indicator background_jobs history time)
+POWERLEVEL9K_GO_ICON="\uf7b7"
+POWERLEVEL9K_GO_VERSION_BACKGROUND='clear'
+POWERLEVEL9K_GO_VERSION_FOREGROUND='081'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context root_indicator dir dir_writable_joined custom_git_pair vcs_joined)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(go_version virtualenv pyenv node_version nvm status root_indicator background_jobs history time os_icon)
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 
 # Set list of themes to pick from when loading at random
