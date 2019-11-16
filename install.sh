@@ -8,9 +8,12 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `osx.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# wget
+brew install wget
+
 # install java 8
-brew tap homebrew/cask-versions
-brew cask install java8
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
 
 # install fura code nerd font
 brew tap homebrew/cask-fonts
